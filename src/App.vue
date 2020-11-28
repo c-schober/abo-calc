@@ -1,13 +1,16 @@
 <template>
   <div id="app">
+    <RangeSlider />
   </div>
 </template>
 
 <script>
 
+import RangeSlider from "@/components/RangeSlider";
 export default {
   name: 'App',
   components: {
+    RangeSlider
   }
 }
 </script>
@@ -20,5 +23,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.slider {
+  width: 400px;
+  margin: 0 auto;
+  display:block;
 }
 </style>

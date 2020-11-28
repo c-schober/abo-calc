@@ -1,5 +1,5 @@
 <template>
-  <b-field label="Lieferinterval Range">
+  <b-field class="slider" label="Lieferinterval Range">
     <b-slider v-model="endpoints" :max="200" :min="10" :step="1" ticks @input="generateRangeArray">
     </b-slider>
   </b-field>
@@ -11,14 +11,19 @@ export default {
 
   data(){
     return {
+      range: [],
       endpoints: [],
-      range: []
     }
-  }
+  },
 
   methods: {
     generateRangeArray(range) {
-      console.log(range);
+      this.range = [];
+      let i;
+      for (i = range[0]; i <= range[1]; i++) {
+        this.range.push(i);
+        console.log(this.range);
+      }
     }
   }
 }

@@ -90,6 +90,8 @@ export default {
 </script>
 
 <style>
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -103,6 +105,7 @@ export default {
   width: 400px;
   margin: 0 auto;
   display: block;
+  max-width: 90%;
 }
 
 .info {
